@@ -11,6 +11,7 @@ print(f"D'aquí a 10 anys tindràs {int(edat) + 10} anys")
 preu = 12.5
 print(f"El preu és {preu:.2f} €")    # El preu és 12.50 €
 
-# El + no sempre suma: depèn del tipus. input() retorna sempre un str,
-# així que a i b són els textos "3" i "4". Entre dos str, el + els
-# concatena i dona "34". Per sumar-los cal convertir-los abans amb int().
+# Amb + només puc unir textos: si hi ha un número l'he de convertir amb str()
+# i he de posar els espais a mà, cosa que fa el codi més llarg i fàcil d'embolicar.
+# Amb una f-string escric les variables dins de {} i Python les converteix sol.
+# És més llegible i permet fer càlculs i formatar (per exemple :.2f) dins les claus.
